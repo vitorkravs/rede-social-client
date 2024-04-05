@@ -1,0 +1,105 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  #login-register-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      color: #737373;
+    }
+
+    #logo-and-description {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 1rem 0rem;
+
+      #logo-insta-container {
+        img {
+          width: 200px;
+        }
+      }
+
+      p {
+        padding-top: 1rem;
+      }
+    }
+
+    #separate-form {
+      padding: 1rem 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      color: #737373;
+
+      span {
+        border-bottom: 1px solid #dbdbdb;
+        width: 150px;
+      }
+    }
+
+    #form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.2rem;
+
+      input {
+        font-size: 1rem;
+        width: 300px;
+        padding: 1rem;
+        background: #fafafa;
+        border: 1px solid rgb(219, 219, 219);
+      }
+
+      p {
+        text-align: center;
+        font-size: 0.9rem;
+        width: 85%;
+      }
+
+      #form-btn {
+        padding: 1rem 0;
+        button {
+          background-color: #0099e6;
+          color: white;
+          width: 250px;
+          padding: 1rem;
+          border-radius: 1.5rem;
+          font-size: 1.2rem;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    padding-top: 1rem;
+    height: 100vh;
+
+    #login-register-container {
+      border: 1px solid #dbdbdb;
+      width: 400px;
+
+      #logo-and-description {
+        padding: 0.3rem 0;
+      }
+    }
+  }
+}
