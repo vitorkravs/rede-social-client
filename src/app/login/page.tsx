@@ -22,15 +22,13 @@ const Login = () => {
         password,
       })
       .then((res) => {
-        console.log(res.data);
         setSucess(res.data.msg);
         setError("");
         setEmail("");
         setPassword("");
       })
       .catch((err) => {
-        console.log(err);
-        setError(err.response.data);
+        setError(err.response.data.msg);
         setSucess("");
       });
   };
@@ -93,6 +91,12 @@ const Login = () => {
             .
           </p>
           <div id="form-btn">
+            {error && (
+              <div style={{ color: "red", marginTop: "10px" }}>{error}</div>
+            )}
+            {sucess && (
+              <div style={{ color: "green", marginTop: "10px" }}>{sucess}</div>
+            )}
             <button type="submit">Entrar</button>
           </div>
         </form>
