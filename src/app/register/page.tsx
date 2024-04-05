@@ -3,6 +3,7 @@
 import "./styles.scss";
 
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 import axios from "axios";
 
@@ -23,7 +24,6 @@ const PageRegister = () => {
         confirmPassword,
       })
       .then((res) => {
-        console.log(res.data);
         setSucess(res.data.msg);
         setError("");
         setEmail("");
@@ -31,7 +31,6 @@ const PageRegister = () => {
         setConfirmPassword("");
       })
       .catch((err) => {
-        console.log(err);
         setError(err.response.data);
         setSucess("");
       });
@@ -101,6 +100,12 @@ const PageRegister = () => {
             .
           </p>
           <div id="form-btn">
+            {error && (
+              <div style={{ color: "red", marginTop: "10px" }}>{error}</div>
+            )}
+            {sucess && (
+              <div style={{ color: "green", marginTop: "10px" }}>{sucess}</div>
+            )}
             <button type="submit">Cadastre-se</button>
           </div>
         </form>
