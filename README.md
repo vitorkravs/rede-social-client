@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Projeto Frontend de Autenticação - Layout Instagram
 
-## Getting Started
+Este projeto é uma aplicação frontend de autenticação, inspirada no layout do Instagram, construída com Next.js, SASS para estilização e Axios para comunicação com a API. Ele permite o registro e login de usuários, simulando uma interface familiar para muitos usuários.
 
-First, run the development server:
+## Tecnologias Utilizadas
+
+Next.js
+SASS para estilização
+Axios para requisições HTTP
+
+## Funcionalidades
+
+Interface de login de usuário
+Interface de registro de usuário
+
+## Como Executar
+
+Certifique-se de ter o Node.js instalado em sua máquina antes de seguir os passos abaixo.
+
+## Clone o repositório:
+
+```bash
+git clone https://github.com/vitorkravs/rede-social-client.git
+
+cd <NOME_DO_DIRETORIO>
+
+npm install
+```
+
+## Execute o projeto:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O projeto estará rodando em http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Páginas
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Login
 
-## Learn More
+A página de login possui campos para o usuário inserir seu e-mail e senha. Ao submeter, uma requisição é enviada para a API de autenticação para verificar as credenciais.
 
-To learn more about Next.js, take a look at the following resources:
+### Registro
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A página de registro permite que um novo usuário crie uma conta, inserindo seu e-mail, senha e confirmação de senha. Após o registro, uma requisição é enviada para a API para criar o novo usuário no sistema.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Componentes Principais
 
-## Deploy on Vercel
+Formulários de Login e Registro: formulários para coletar as informações do usuário, com validações básicas de campo.
+Navegação: permite alternar entre as páginas de login e registro.
+Feedback ao Usuário: mensagens de sucesso ou erro após tentativas de login ou registro.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Estilização com SASS
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+O projeto utiliza SASS para uma estilização mais organizada e modular. Os arquivos .scss seguem uma estrutura que facilita a manutenção e atualização do estilo da aplicação.
+
+## Comunicação com a API
+
+Axios é utilizado para realizar as requisições HTTP para a API de autenticação, tratando as respostas e atualizando a interface do usuário de acordo com o resultado (sucesso ou falha).
+
+## Contribuições
+
+Contribuições são sempre bem-vindas! Para contribuir, crie um fork do projeto, faça suas alterações e submeta um Pull Request.
