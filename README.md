@@ -4,9 +4,11 @@ Este projeto é uma aplicação frontend de autenticação, inspirada no layout 
 
 ## Tecnologias Utilizadas
 
-Next.js
-SASS para estilização
-Axios para requisições HTTP
+- Next.js
+
+- SASS para estilização
+  
+- Axios para requisições HTTP
 
 ## Funcionalidades
 
