@@ -3,7 +3,6 @@
 import "./styles.scss";
 
 import { useState } from "react";
-import { useRouter } from "next/router";
 
 import axios from "axios";
 
@@ -45,7 +44,7 @@ const PageRegister = () => {
           </picture>
           <p>Cadastre-se para ver fotos e vídeos dos seus amigos.</p>
         </div>
-        <a href="/login">Faça login</a>
+        <a href="/">Faça login</a>
         <div id="separate-form">
           <span></span>OU<span></span>
         </div>
